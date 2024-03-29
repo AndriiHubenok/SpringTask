@@ -11,6 +11,12 @@ public class Note {
         this.content = content;
     }
 
+    public Note() {
+        this.id = 100L;
+        this.title = "title";
+        this.content = "content";
+    }
+
     public Long getId() {
         return id;
     }
