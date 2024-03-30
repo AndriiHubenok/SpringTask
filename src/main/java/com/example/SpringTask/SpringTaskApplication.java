@@ -9,7 +9,7 @@ public class SpringTaskApplication {
 
 	public static void main(String[] args) {
 		Flyway flyway = Flyway.configure()
-				.dataSource("jdbc:h2:/Users/user/IdeaProjects/SpringTask/base", "sa", null)
+				.dataSource("jdbc:h2:/Users/user/IdeaProjects/SpringTask/database", "sa", null)
 				.load();
 
 		flyway.migrate();
