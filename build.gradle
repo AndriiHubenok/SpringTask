@@ -21,6 +21,10 @@ dependencies {
 	implementation group: 'org.springframework', name: 'spring-webmvc', version: '6.1.5'
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '3.2.4'
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '3.2.4'
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '3.2.4'
+	implementation(files("lib/h2-2.2.220.jar"))
+	implementation group: 'org.flywaydb', name: 'flyway-core', version: '10.10.0'
+
 }
 
 tasks.named('test') {
